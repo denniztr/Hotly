@@ -64,6 +64,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
 
     > div {
         width: 1100px;
@@ -99,4 +100,286 @@ a {
 
 /* main section */
 
+.main-section {
+    padding: 0 170px 0 170px;
+}
+
+.main-section-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: rgba(0, 7, 6, 1);
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0 12px;
+}
+
+.filter-container-main {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-item {
+    padding: 12px 20px 12px 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    gap: 8px;
+}
+
+.info-item {
+    display: flex;
+    gap: 8px;
+    margin-left: 16px;
+    color: rgba(77, 79, 79, 1);
+    font-size: 14px;
+}
+
+.all-filters {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(10, 81, 76, 1);
+}
+
+
+/* active filter*/
+
+#activeFilter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    span {
+        font-size: 16px;
+        color: rgba(0, 7, 6, 1);
+        text-decoration: underline;
+        cursor: pointer;
+        margin-left: 24px;
+    }
+
+}
+
+.sort-option {
+    display: flex;
+    gap: 8px;
+    border-radius: 3px;
+    background-color: rgba(217, 227, 227, 1);
+    padding: 8px 10px 8px 12px;
+    cursor: pointer;
+
+    > h5 {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 7, 6, 1);
+    }
+}
+
+/* cards */
+
+.card-wrapper {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 16px 0 20px;
+    margin-bottom: 12px;
+}
+
+.card-wrapper:hover {
+    background: rgba(255, 225, 117, 0.15);
+    outline: 2px solid rgba(255, 225, 117, 1);
+
+    .card-numbering {
+        background: rgba(255, 225, 117, 1);
+    }
+
+    .regulation-container {
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .regulation-container-title {
+        background-color: rgba(246, 245, 244, 0.7);
+    }
+
+    .title-bonus {
+        background: rgba(255, 225, 117, 1);
+    }
+
+}
+
+.card-main-content {
+    height: 137px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 8px;
+}
+
+.card-numbering {
+    height: 40px;
+    padding: 8px;
+    background-color: rgba(0, 69, 64, 0.12);
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(10, 81, 76, 1);
+}
+
+.card-logo-container {
+    width: 150px;
+    height: 110px;
+    border: 2px solid rgba(217, 218, 218, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.rating-container {
+    display: flex;
+    gap: 4px;
+}
+
+.rating-title {
+    font-size: 14px;
+    color: rgba(77, 79, 79, 1);
+}
+
+.rating-star-container {
+    margin: 8px 0 8px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    background-color: rgba(246, 245, 244, 0.7);
+    border-radius: 3px;
+
+
+    span {
+        font-weight: 600;
+        color: rgba(0, 7, 6, 1);
+    }
+
+}
+
+.card-branch-rating {
+    width: 172px;
+}
+
+.card-branch-name {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: rgba(10, 81, 76, 1);
+}
+
+.card-additional-info {
+    height: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.regulation-container {
+    width: 200px;
+    height: 100%;
+    background: rgba(246, 245, 244, 0.7);
+    border-radius: 5px;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.bonus-container {
+    width: 260px;
+    height: 100%;
+    background: rgba(246, 245, 244, 0.7);
+    border-radius: 5px;
+}
+
+.regulation-container-title {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16.8px;
+    font-weight: 600;
+    padding: 4px 8px 4px 8px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+}
+
+.regulation {
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(77, 79, 79, 1);
+    }
+}
+
+.bonus {
+    width: 260px;
+}
+
+.title-bonus {
+    background: rgba(255, 225, 117, 1);
+}
+
+.reg-bonus {
+    p {
+        font-size: 18px;
+    }
+}
+
+.button {
+    width: 174px;
+    height: 64px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(10, 81, 76, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.more {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 7, 6, 1);
+    text-align: center;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 3px;
+        margin-left: 8px;
+    }
+}
+
+.test {
+    display: none;
+}
+
+.active {
+    display: block;
+}
 
